@@ -1,7 +1,8 @@
-let n = parseInt(prompt("Son kiriting:")); 
-let yigindi = 0;
-
-for (let i = 1; i <= n; i++) {
-    yigindi += i;
-}
-console.log(yigindi)
+let a=document.getElementById('a')
+let b=document.getElementById('b')
+let bos=document.getElementById('bos')
+let natija=document.getElementById('natija')
+bos.addEventListener('click', ()=>{
+    const c=Number(a.value)+Number(b.value);
+    natija.innerHTML = `<ul> <li>Yig‘indi: <span style="color:red">${c}</span> </ul>`;
+})
